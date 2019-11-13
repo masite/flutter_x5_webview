@@ -1,5 +1,5 @@
 # flutter_x5_webview
-提供tbs预览， 全内嵌 实现预览。
+提供tbs预览， 全内嵌 实现预览。 只支持android，Android的才这么麻烦，ios没这么麻烦 0.0.可以使用webview_flutter: ^0.3.15+1，加载ios端的。
 
 感谢 https://github.com/VenusCao/x5_webview_flutter 提供的思路，本插件只是对这个项目的 修改。增加以下功能：
 
