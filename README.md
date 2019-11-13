@@ -54,4 +54,16 @@ _controller.replaceFilePath(filePath).then((value) {
 FlutterTbs.openFileWithThird(openWithThirdFilePath);
 ```
 
-### 注意 ,进行下载前，或者打开本地文件，切记申请存储权限，不然会预览失败
+### 注意 ,
+1. 进行下载前，或者打开本地文件，切记申请存储权限，不然会预览失败
+2. 打包相关。这两种操作，可以确保x5初始化成功 
+debug包，通过命令行 
+```
+flutter build apk --debug --target-platform=android-arm
+flutter run --use-application-binary=build/app/outputs/apk/debug/app-debug.apk
+```
+release 包：
+```
+ndk{abiFilters 'armeabi-v7a'}
+```
+
