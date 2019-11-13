@@ -9,6 +9,12 @@
 
 ### 关键方法
 
+#### 初始化
+```
+FlutterTbs.init().then((isOK) {
+    print(isOK ? "X5内核成功加载" : "X5内核加载失败");
+  });
+```
 
 #### 基础使用
 ```
@@ -47,3 +53,5 @@ _controller.replaceFilePath(filePath).then((value) {
 ```
 FlutterTbs.openFileWithThird(openWithThirdFilePath);
 ```
+
+### 注意 ,进行下载前，或者打开本地文件，切记申请存储权限，不然会预览失败
